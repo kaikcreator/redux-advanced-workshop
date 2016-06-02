@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import UserItem from '../containers/user_item';
+import UserItem from './user_item';
 import { fetchAllUsers } from '../actions/index';
 
 import DataLoader from './data_loader';
