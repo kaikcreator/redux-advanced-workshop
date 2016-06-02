@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import UserItem from '../containers/user_item';
 import { fetchAllUsers } from '../actions/index';
 
-import DataLoader from '../components/data_loader';
+import DataLoader from './data_loader';
 
 class UserList extends Component {
 

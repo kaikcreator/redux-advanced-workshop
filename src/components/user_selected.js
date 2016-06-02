@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import DataLoader from '../components/data_loader';
+import DataLoader from './data_loader';
 
 class UserSelected extends Component {
 
