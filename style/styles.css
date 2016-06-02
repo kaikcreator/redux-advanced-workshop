@@ -1,0 +1,9 @@
+.container {
+  padding: 20px;
+}
+
+.form-inline input {
+  display: inline-block;
+  width: auto;
+  margin: 5px;
+}
