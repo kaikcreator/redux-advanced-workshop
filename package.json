@@ -10,9 +10,9 @@
   "bugs": {
     "url": "https://github.com/kaikcreator/redux-advanced-workshop/issues"
   },
-  "homepage": "https://github.com/kaikcreator/redux-advanced-workshop#readme",  
+  "homepage": "https://github.com/kaikcreator/redux-advanced-workshop#readme",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "gulp sass; node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +23,8 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.5.0",
     "css-loader": "^0.23.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
