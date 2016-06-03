@@ -1,0 +1,19 @@
+.user-selected{
+  display: inline-block !important;
+  width:100%;
+  position: relative;
+  padding: 2em;
+  border-radius: .25em;
+  margin-bottom: .5em;
+  margin-left: 40px;
+  background: #fff;
+  box-shadow:
+    0 .0625em .125em rgba(0, 0, 0, .125),
+    inset 0 -.25em 0 -.125em rgba(0, 0, 0, .125); 
+    
+  .email{
+    font-weight: 600;
+    margin-bottom: 1em;
+  } 
+  
+}

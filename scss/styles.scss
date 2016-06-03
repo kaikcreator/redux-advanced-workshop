@@ -1,11 +1,14 @@
+//import components styles
+@import 'components/user-list.scss';
+@import 'components/user-item.scss';
+@import 'components/user-selected.scss';
+
+
+//general styles
 .container{
   padding: 20px;
 }
 
-.form-inline{
-  input{
-    display: inline-block;
-    width: auto;
-    margin: 5px;
-  }
-}
+  
+
+
