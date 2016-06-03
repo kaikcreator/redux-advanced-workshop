@@ -16,7 +16,7 @@ class UserList extends Component {
 
 	render() {
 		return (
-			<ul className="user-list, col-md-10">
+			<ul className="user-list">
 				{this.createUserMap()}
 			</ul>
 		);

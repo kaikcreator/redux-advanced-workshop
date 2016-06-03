@@ -26,7 +26,7 @@ export default function(Component, actionCreator, dataName, message) {
 
     render() {
       if (!this.state.loaded) {
-        return <span>{message}</span>;
+        return <div>{message}</div>;
       }
       return <Component {...this.props} />
     }

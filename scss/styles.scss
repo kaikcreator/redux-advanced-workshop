@@ -1,54 +1,14 @@
-body{
-  background-color: #e1e1e1;
-}
+//import components styles
+@import 'components/user-list.scss';
+@import 'components/user-item.scss';
+@import 'components/user-selected.scss';
 
+
+//general styles
 .container{
   padding: 20px;
 }
 
-.user-item{
-    display: block;
-    position: relative;
-    padding: .75em 5em .75em 1em;
-    border-radius: .25em;
-    margin-bottom: .5em;
-    background: #fff;
-    box-shadow:
-      0 .0625em .125em rgba(0, 0, 0, .125),
-      inset 0 -.25em 0 -.125em rgba(0, 0, 0, .125),
-      inset 1em 0 0 -.7em rgba(0, 95, 210, .5),
-      inset -2em 0 0 -.3em rgba(0, 0, 0, .05);
-}
-
-
-.chevron {
-  display: block;
-  width: 1em;
-  height: 1em;
-  font-size: .75em;
-  position: absolute;
-  right: .667em;
-  top: 50%;
-  margin-top: -.6em; /* just eyeballing it */
   
-  &:before, &:after{
-      content: '';
-      display: block;
-      position: absolute;
-      background: rgba(0, 0, 0, .125);
-      width: .5em;
-      height: .5em;
-      right: .25em;
-      top: 50%;
-  }
-  &:before{
-      transform: skewX( 45deg );
-      top: 0;
-      box-shadow: inset -.125em .125em .125em rgba(0, 0, 0, .25);    
-  }
-  &:after {
-      transform: skewX( -45deg );
-      bottom: 0;
-      box-shadow: inset .25em .125em .125em -.125em rgba(0, 0, 0, .25);
-  }
-}
+
+
