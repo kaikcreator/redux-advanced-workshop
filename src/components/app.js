@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import UserList from '../components/user_list';
+import UserSelected from '../components/user_selected';
 
 export default class App extends Component {
-  render() {
-    return (
-      <div>Base component</div>
-    );
-  }
+
+	render() {
+		return (
+			<div>
+				<UserList />
+				<UserSelected />
+			</div>
+		);
+	}
 }
