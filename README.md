@@ -30,3 +30,31 @@ Finally, go to http://localhost:8081/
 ```
 
 Finally, go to http://localhost:8081/
+
+
+####Using SaSS
+
+The app comes with css styles included, but you can change styles using sass (on scss folder) and compile them to css using gulp.
+
+
+#####Installing gulp
+Gulp has been installed locally in your repo through npm install, but it is probably that you need to install it at a global level:
+
+```
+	> npm install -g gulp
+```
+
+#####Compiling SaSS
+You can compile it once by running in terminal:
+
+```
+	> gulp sass
+```
+
+Or you can run it as a process watching for your changes with:
+
+```
+	> gulp sass-watch
+```
+
+>NOTE: If you are using the server at the same time, just refresh the page and the changes with update automatically.
