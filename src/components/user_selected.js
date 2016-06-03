@@ -8,18 +8,18 @@ class UserSelected extends Component {
 		const { selectedUser } = this.props;
 
 		if (!selectedUser) {
-			return <span>No user selected</span>;
+			return <div>No user selected</div>;
 		}
 
 		return (
-			<div class="user-selected">
-				<span>Email: {selectedUser.email}</span>
-				<span>Phone: {selectedUser.phone}</span>
-				<span>Address: {`${selectedUser.address.street} ${selectedUser.address.suite}`}</span>
-				<span>City: {selectedUser.address.city}</span>
-				<span>ZIP: {selectedUser.address.zipcode}</span>
-				<span>Website: {selectedUser.website}</span>
-				<span>Company: {selectedUser.company.name}</span>
+			<div className="user-selected">
+				<div className="email">Email: {selectedUser.email}</div>
+				<div>Phone: {selectedUser.phone}</div>
+				<div>Address: {`${selectedUser.address.street} ${selectedUser.address.suite}`}</div>
+				<div>City: {selectedUser.address.city}</div>
+				<div>ZIP: {selectedUser.address.zipcode}</div>
+				<div>Website: {selectedUser.website}</div>
+				<div>Company: {selectedUser.company.name}</div>
 			</div>
 		);
 	}

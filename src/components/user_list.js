@@ -23,7 +23,7 @@ class UserList extends Component {
 			return <span>"Loading..."</span>;
 		}
 		return (
-			<ul className="col-md-10">
+			<ul className="user-list">
 				{this.createUserMap()}
 			</ul>
 		);
