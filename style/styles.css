@@ -1,0 +1,62 @@
+.user-list {
+  display: block;
+  overflow: auto;
+}
+
+.user-item {
+  display: block;
+  position: relative;
+  padding: .75em 5em .75em 1em;
+  border-radius: .25em;
+  margin-bottom: .5em;
+  background: #fff;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125);
+}
+
+.user-item:hover {
+  background-color: #e1e1e1;
+  box-shadow: none;
+}
+
+.user-item:active {
+  background-color: #999;
+  box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  .user-item {
+    height: 100px;
+  }
+  .user-item.col-md-3 {
+    width: 22%;
+    margin-right: 4%;
+  }
+  .user-item.col-md-3:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.user-selected {
+  display: inline-block !important;
+  width: calc(100% - 40px);
+  position: relative;
+  padding: 2em;
+  border-radius: .25em;
+  margin-bottom: .5em;
+  margin-left: 40px;
+  background: #fff;
+  box-shadow: 0 0.0625em 0.125em rgba(0, 0, 0, 0.125), inset 0 -0.25em 0 -0.125em rgba(0, 0, 0, 0.125);
+}
+
+.user-selected .email {
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+body {
+  background-color: #f4f4f4 !important;
+}
+
+.container {
+  padding: 20px;
+}
