@@ -4,7 +4,7 @@ var path = require('path'),
 module.exports = {
 	// Entry point for the bundle.
 	entry: [
-		'./src/index.jsx'
+		'./src/index.js'
 	],
 
 	output: {

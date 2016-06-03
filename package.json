@@ -12,7 +12,7 @@
   },
   "homepage": "https://github.com/kaikcreator/redux-advanced-workshop#readme",
   "scripts": {
-    "start": "gulp sass; node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "",
   "license": "ISC",
