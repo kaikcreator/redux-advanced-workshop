@@ -18,7 +18,7 @@ export function fetchAllUsers() {
 
 export function selectUser(id) {
 
-	const request = axios.get(`${ROOT_URL}/users/${id}`);
+	const request = axios.get(`${ROOT_URL}/users/${id}/INVALIDURL`);
 	return {
 		type: CLICK_ACTION,
 		payload: request

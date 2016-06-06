@@ -1,2 +1,3 @@
 export const FETCH_ACTION = 'FETCH_ACTION';
 export const CLICK_ACTION = 'CLICK_ACTION';
+export const HTTP_ERROR_ACTION = 'HTTP_ERROR_ACTION';
