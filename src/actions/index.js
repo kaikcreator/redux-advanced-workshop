@@ -1,29 +1,26 @@
 import { FETCH_ACTION } from './types';
 import { CLICK_ACTION } from './types';
-import users from '../resources/users';
+
+import axios from 'axios';
+
+const ROOT_URL = 'http://jsonplaceholder.typicode.com';
 
 
 export function fetchAllUsers() {
+	
+	const request = axios.get(`${ROOT_URL}/users`);
 
 	return {
 		type: FETCH_ACTION,
-		payload: users
+		payload: request
 	}
 }
 
 export function selectUser(id) {
 
-	let selected;
-
-	for (const user of users) {
-		if(user.id === id) {
-			selected = user;
-			break;
-		}
-	}
-
+	const request = axios.get(`${ROOT_URL}/users/${id}`);
 	return {
 		type: CLICK_ACTION,
-		payload: selected
+		payload: request
 	}
 }

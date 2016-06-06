@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import DataLoader from './data_loader';
 
 class UserSelected extends Component {
 
 	render() {
 
 		const { selectedUser } = this.props;
-
-		if (!selectedUser) {
-			return <div>No user selected</div>;
-		}
 
 		return (
 			<div className="user-selected">
@@ -25,10 +21,4 @@ class UserSelected extends Component {
 	}
 }
 
-function mapStateToProps(state) {
-	return {
-		selectedUser: state.selectedUser
-	}
-}
-
-export default connect(mapStateToProps)(UserSelected);
+export default DataLoader(UserSelected, null, "selectedUser", "No user selected");
