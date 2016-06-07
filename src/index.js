@@ -5,10 +5,9 @@ import { createStore, applyMiddleware } from 'redux';
 
 import App from './components/app';
 import reducers from './reducers';
-import logger from './middlewares/logger';
-import promises from './middlewares/promises';
+import { logger, promises, performance } from './middlewares';
 
-const createStoreWithMiddleware = applyMiddleware(logger, promises)(createStore);
+const createStoreWithMiddleware = applyMiddleware(logger, promises, performance)(createStore);
 
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
